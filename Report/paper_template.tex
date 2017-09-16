@@ -142,6 +142,13 @@ Hillary Rhoda]{\includegraphics{Images/12}}
 \section{ẢNH GỐC EM BÉ}
 Bộ cơ sở dữ liệu bao gồm ảnh của chín em bé với màu da và màu mắt khác nhau sẽ được so sánh và chọn lọc dựa trên những đặc điểm tương đồng với hình ảnh của bố mẹ. Vì thư viện flandmark dựa trên hình mẫu khuôn mặt của người lớn, mà hình dạng của khuôn mặt trẻ em lại rất khác với giữa người lớn, nên việc định vị các điểm mốc của khuôn mặt phải được thực hiện thủ công. Các điểm mấu chốt trên khuôn mặt sẽ được tính toán bằng các phương trình hiệu chỉnh để phù hợp với khuôn mặt em bé. Sau cùng, các đặc trưng sẽ được trích xuất bằng phương pháp được trình bày ở mục II-A tới II-D. 
 
+\begin{figure}[!t]
+\centering
+\includegraphics{Images/17}
+\caption{Phân vùng các đặc tính khuôn mặt của Hillary Rhoda}
+\label{refhinh4}
+\end{figure}
+
 Để chọn được tấm ảnh gốc em bé phù hợp với hình ảnh cha mẹ, yếu tố căn bản cần xem xét là màu da. Việc so sánh được thực hiện bằng cách tổ hợp tuyến tính các giá trị HSV (hue, saturation, value) của màu da bố và mẹ để tạo ra màu da tổng hợp, rồi chọn ra ảnh gốc em bé có màu da trong hệ màu HSV gần nhất với màu da tổng hợp này. Ngoài ra nếu cả bố và mẹ đều có mắt xanh lá hoặc xanh dương, ảnh em bé với màu mắt đó sẽ được chọn.
 
 \section{MORPHING CÁC ĐẶC TÍNH}
@@ -171,6 +178,16 @@ Công thức homography
     \end{bmatrix}
 \end{align*}
 
+\begin{figure}[!t]
+\centering
+\subfigure[A]{\includegraphics[scale=0.97]{Images/16}}
+\subfigure[B]{\includegraphics{Images/22}}
+\subfigure[A']{\includegraphics{Images/31}}
+\subfigure[B]{\includegraphics{Images/43}}
+\subfigure[Cross-dissolving của A' và B', I]{\includegraphics{Images/50}}
+\label{refhinh4}
+\caption{Morphing of two parent features, A and B}
+\end{figure}
 Quá trình trên ánh xạ toạ độ của các điểm ảnh trên ảnh đích đến các điểm ảnh trên ảnh gốc, rồi gán màu sắc nội suy của ảnh gốc cho ảnh đích, với \[\textbf{\underline{x}} = T^{-1}\textbf{\underline{x}'}\]
 Điều này đảm bảo tất cả điểm ảnh trên ảnh đích đều được gán giá trị.
 
@@ -181,7 +198,16 @@ Với $0 < \alpha < 1$. Kết quả cross-dissolve từ hình của hai bố m�
 
 \subsection{Tạo dựng hình ảnh em bé}
 Các đặc trưng hỗn hợp của người lớn sẽ được morphing với các đặc trưng tương ứng trên ảnh gốc em bé sử dụng các bước morphing (phân vùng ảnh, warping, và cross-dissolving) như đã được miêu tả ở trên. Điều này là cần thiết để đảm bảo các đặc trưng sau cùng trông giống với một em bé, vì một số đặc trưng nhất định vốn rất khác nhau giữa trẻ em và người lớn. Ví dụ, trẻ em có tròng mắt lớn hơn và sống mũi phẳng hơn. Kết quả của phép warping cuối cùng này được thể hiện trong Hình 11.
-
+\begin{figure}[!t]
+\centering
+\subfigure[Đặc tính hỗn hợp của khuôn mặt người lớn, I]{\includegraphics{Images/43}}
+\subfigure[Đặc tính cơ bản của khuôn mặt em bé, C]{\includegraphics{Images/19}}
+\subfigure[Đặc tính hỗn hợp của khuôn mặt người lớn đã được làm cong 	, I']{\includegraphics{Images/46}}
+\subfigure[Đặc tính cơ bản của khuôn mặt em bé đã được làm cong, C']{\includegraphics{Images/6}}
+\subfigure[Cross-dissolving của I' và C', F]{\includegraphics{Images/15}}
+\label{refhinh4}
+\caption{Morphing giữa đặc tính hỗn hợp của khuôn mặt người lớn và đặc tính cơ bản khuôn mặt em bé, A và B}
+\end{figure}
 Bước tiếp theo, các đặc trưng được tạo ra, F, sẽ được đặt chồng lên ảnh gốc em bé sao cho điểm trung tâm của các đặc trưng trùng nhau. Các điểm biên của vùng đặc trưng sẽ được làm mượt để làm cho các đặc trưng được tạo ra hòa lẫn vào vùng biên trên ảnh gốc em bé. Một mặt nạ nhị phân xung quanh F, BW, sẽ được tạo, sử dụng open filter và erode để làm cho mặt nạ nhị phân mượt hơn và nhỏ hơn. Một bộ lọc Gauss được áp dụng lên mặt nạ nhị phân để tạo ra mặt nạ trọng số $\sigma$. Dựa trên các đặc trưng khuôn mặt, ta có thể áp dụng bộ lọc trung bình hoặc bộ lọc Gauss lên nghịch đảo của BW nhằm tạo ra mặt nạ trọng số $\beta$. Hình 12 minh họa mặt nạ trọng số được sử dụng trong quá trình làm mượt ảnh.  
 
 Các đặc tính đặc lên ảnh gốc em bé được tính toán theo công thức \[Feature = \beta I_{baby}+(1 - \beta )(\sigma F+(1-\sigma )C')\]
@@ -194,9 +220,43 @@ Chương trình Tạo dựng Khuôn mặt Em bé được thử nghiệm trên 3
 
 Tuy nhiên, nếu một trong hai ảnh bố hoặc mẹ được đưa vào nghiêng một góc lớn, khuông mặt được tạo ra sẽ trông không thật. Dù sao, chương trình có được thể thiết kế để chỉ chấp nhận ngõ vào là ảnh chụp thẳng khuôn mặt, vì mục đích của chương trình là tương tác trực tiếp với các người dùng.
 
+\begin{figure}[!t]
+\centering
+\subfigure[Mặt nạ trọng số $\sigma$ của mắt trái]{\includegraphics{Images/60}}
+\subfigure[Mặt nạ trọng số $\beta$ của mắt trái]{\includegraphics{Images/18}}
+\subfigure[Mặt nạ trọng số $\sigma$ của mắt phải]{\includegraphics{Images/5}}
+\subfigure[Mặt nạ trọng số $\beta$ của mắt phải]{\includegraphics{Images/53}}
+\subfigure[Mặt nạ trọng số $\sigma$ của mũi]{\includegraphics{Images/55}}
+\subfigure[Mặt nạ trọng số $\beta$ của mũi]{\includegraphics{Images/42}}
+\subfigure[Mặt nạ trọng số $\sigma$ của miệng]{\includegraphics{Images/23}}
+\subfigure[Mặt nạ trọng số $\beta$ của miệng]{\includegraphics{Images/33}}
+\label{refhinh4}
+\caption{Mặt nạ trọng số dùng trong việc làm mượt ranh giới của mỗi đặc tính}
+\end{figure}
+
 \section{KẾT LUẬN}
 Một chương trình tạo dựng khuôn mặt em bé tự động đã được phát triển. Phương pháp trích xuất đặc trưng khuôn mặt và thuật toán morphing tương tối thỏa mãn việc tạo ra khuôn mặt một em bé từ ảnh bố mẹ. Ứng dụng có thể pháp triển thêm bằng cách mở rộng bộ cơ sở dữ liệu ảnh em bé, phát triển việc nhận dạng cha mẹ để đưa ra sự lựa chọn ảnh gốc tốt hơn. Ngoài ra, có thể áp dụng một thuật toán thay đổi tuổi tác để tạo ra ảnh khi bé của bố và mẹ trước khi kết hợp chúng với nhau. Điều này có thể hạn chế các khiếm khuyết bới sự khác biệt giữa các đặc trưng phụ thuộc vào tuổi tác.
 
+\begin{figure}[!t]
+\centering
+\subfigure[Hình ảnh cha mẹ 1a]{\includegraphics[scale=0.95]{Images/14}}
+\subfigure[Hình ảnh cha mẹ 1b]{\includegraphics{Images/38}}
+\subfigure[Hình ảnh em bé 1]{\includegraphics{Images/58}}
+\subfigure[Hình ảnh cha mẹ 2a]{\includegraphics[scale=0.7]{Images/10}}
+\subfigure[Hình ảnh cha mẹ 2b]{\includegraphics[scale=0.9]{Images/45}}
+\subfigure[Hình ảnh em bé 2]{\includegraphics{Images/25}}
+\subfigure[Hình ảnh cha mẹ 3a]{\includegraphics{Images/28}}
+\subfigure[Hình ảnh cha mẹ 3b]{\includegraphics[scale=0.8]{Images/29}}
+\subfigure[Hình ảnh em bé 3]{\includegraphics{Images/58}}
+\subfigure[Hình ảnh cha mẹ 4a]{\includegraphics[scale=0.8]{Images/62}}
+\subfigure[Hình ảnh cha mẹ 4b]{\includegraphics{Images/39}}
+\subfigure[Hình ảnh em bé 4]{\includegraphics{Images/49}}
+\subfigure[Hình ảnh cha mẹ 5a]{\includegraphics{Images/2}}
+\subfigure[Hình ảnh cha mẹ 5b]{\includegraphics{Images/27}}
+\subfigure[Hình ảnh em bé 5]{\includegraphics{Images/56}}
+\label{refhinh13}
+\caption{Ví dụ kết quả của tạo dựng khuôn mặt em bé. Cột bên phải là hình ảnh được tạo dựng từ hình ảnh cha mẹ ở cột trái và giữa}
+\end{figure}
 % Use IEEE bibliography type
 \bibliographystyle{IEEETran}
 
@@ -204,3 +264,4 @@ Một chương trình tạo dựng khuôn mặt em bé tự động đã đượ
 \bibliography{Bib_template}
 
 \end{document}
+

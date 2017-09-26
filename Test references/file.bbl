@@ -44,4 +44,36 @@ A.~Dantcheva, N.~Erdogmus, , and J.~Dugelay, ``On the reliability of eye color
   as a soft biometric trait,'' \emph{Applications of Computer Vision (WACV),
   2011 IEEE Workshop}, pp. 227--231.
 
+\bibitem{ref:r5}
+L.~Vincent, ``Morphological grayscale reconstruction in image analysis:
+applications and efficient algorithms,'' \emph{Image Processing,IEEE Transactions
+on}, vol.~2, no~2, pp. 176–201, 1993.
+
+\bibitem{ref:r6}
+J.~Canny, ``A computational approach to edge detection,'' \emph{Pattern Analysis
+and Machine Intelligence, IEEE Transactions on}, no.~6, pp. 679–698,
+1986.
+
+\bibitem{ref:r7}
+D.~Young, ``Hough transform for circles,''MATLAB Central File
+Exchange, 2010
+
+\bibitem{ref:r8}
+U.~Canzler and T.~Dziurzyk,``Extraction of non manual features for
+video based sign language recognition,''in IAPR \emph{workshop on machine
+vision applications} 2002, pp. 318–321
+
+\bibitem{ref:r9}
+C.~Garcia and G.~Tziritas,``Face detection using quantized skin
+color regions merging and wavelet packet analysis,'' \emph{Trans. Multi}, vol.~1, no.~3, pp. 264–277, Sep. 1999. [Online]. Available:
+http://dx.doi.org/10.1109/6046.784465
+
+\bibitem{ref:r10}
+D.~B.~Smythe,``A two-pass mesh warping algorithm for object transformation
+and image interpolation,'' \emph{Rapport technique} vol.~1030, p. 31,
+1990.
+
+\bibitem{ref:r11}
+G.~Wolberg,``Image morphing: a survey,'' \emph{The visual computer}  vol.~14,
+no.~8, pp. 360–372, 1998.
 \end{thebibliography}

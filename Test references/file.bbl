@@ -21,6 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{ref:r0}
+Sarah~Divel, Picha~Shunhavanich, ``Baby Face Generator,'' Department of 
+Stanford University, tech-report.
+
 \bibitem{ref:r1}
 A.~Frome, G.~Cheung, A.~Abdulkader, M.~Zennaro, B.~Wu, A.~Bissacco, H.~Adam,
   H.~Neven, and L.~Vincent, ``Large-scale privacy protection in google street

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.21)  24 OCT 2017 23:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.21)  29 OCT 2017 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -895,47 +895,96 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 20.
 
-No file report.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count120
+\mult@box=\box30
+\multicol@leftmargin=\dimen145
+\c@unbalance=\count121
+\c@collectmore=\count122
+\doublecol@number=\count123
+\multicoltolerance=\count124
+\multicolpretolerance=\count125
+\full@width=\dimen146
+\page@free=\dimen147
+\premulticols=\dimen148
+\postmulticols=\dimen149
+\multicolsep=\skip54
+\multicolbaselineskip=\skip55
+\partial@page=\box31
+\last@line=\box32
+\maxbalancingoverflow=\dimen150
+\mult@rightbox=\box33
+\mult@grightbox=\box34
+\mult@gfirstbox=\box35
+\mult@firstbox=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\c@columnbadness=\count126
+\c@finalcolumnbadness=\count127
+\last@try=\dimen151
+\multicolovershoot=\dimen152
+\multicolundershoot=\dimen153
+\mult@nat@firstbox=\box54
+\colbreak@box=\box55
+\mc@col@check@num=\count128
+) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for T5+cmr on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 23.
+LaTeX Font Info:    Try loading font information for T5+cmr on input line 23.
+
 (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Try loading font information for T5+lmr on input line 25.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Try loading font information for T5+lmr on input line 23.
 
 (/usr/share/texmf/tex/latex/lm/t5lmr.fd
 File: t5lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
--- Lines per column: 58 (exact).
+-- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen145
-\scratchbox=\box30
-\nofMPsegments=\count121
-\nofMParguments=\count122
+\scratchcounter=\count129
+\scratchdimen=\dimen154
+\scratchbox=\box56
+\nofMPsegments=\count130
+\nofMParguments=\count131
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen146
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen155
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
 \everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -954,7 +1003,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box31
+\AtBeginShipoutBox=\box57
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -964,7 +1013,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 25.
+Package hyperref Info: Link coloring ON on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -972,707 +1021,666 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count126
+\c@section@level=\count135
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
+
+(./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
-
-
-LaTeX Warning: Citation `ref:r0' on page 1 undefined on input line 33.
-
-
-LaTeX Warning: Citation `ref:r0' on page 1 undefined on input line 33.
-
-
-LaTeX Warning: Citation `ref:r0' on page 1 undefined on input line 33.
-
-<Images/44.png, id=4, 247.96194pt x 68.32117pt>
+<Images/44.png, id=72, 247.96194pt x 68.32117pt>
 File: Images/44.png Graphic file (type png)
 <use Images/44.png>
-Package pdftex.def Info: Images/44.png  used on input line 37. on input line 37
+Package pdftex.def Info: Images/44.png  used on input line 42. on input line 42
 .
 Package pdftex.def Info: Requested size: 247.96133pt x 68.32098pt on input line
- 37.
+ 42.
+
 
 Package hyperref Warning: Composite letter `\textacute+\OHORN'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 52.
+(hyperref)                removing `\textacute' on input line 57.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\OHORN' on input line 52.
+(hyperref)                removing `\OHORN' on input line 57.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ECIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 52.
+(hyperref)                removing `\textdotbelow' on input line 57.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ECIRCUMFLEX' on input line 52.
+(hyperref)                removing `\ECIRCUMFLEX' on input line 57.
 
-
-LaTeX Warning: Citation `ref:r1' on page 1 undefined on input line 54.
-
+<Images/11.png, id=74, 248.10216pt x 145.84384pt>
+File: Images/11.png Graphic file (type png)
+<use Images/11.png>
+Package pdftex.def Info: Images/11.png  used on input line 65. on input line 65
+.
+Package pdftex.def Info: Requested size: 248.10153pt x 145.84348pt on input lin
+e 65.
+<Images/64.png, id=75, 471.7625pt x 382.42876pt>
+File: Images/64.png Graphic file (type png)
+<use Images/64.png>
+Package pdftex.def Info: Images/64.png  used on input line 72. on input line 72
+.
+Package pdftex.def Info: Requested size: 188.70164pt x 152.96878pt on input lin
+e 72.
 
 Package hyperref Warning: Composite letter `\textacute+\ACIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 58.
+(hyperref)                removing `\textacute' on input line 78.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ACIRCUMFLEX' on input line 58.
+(hyperref)                removing `\ACIRCUMFLEX' on input line 78.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ABREVE'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 58.
+(hyperref)                removing `\textdotbelow' on input line 78.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ABREVE' on input line 58.
+(hyperref)                removing `\ABREVE' on input line 78.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\UHORN' on input line 58.
+(hyperref)                removing `\UHORN' on input line 78.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ABREVE'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 58.
+(hyperref)                removing `\textdotbelow' on input line 78.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ABREVE' on input line 58.
+(hyperref)                removing `\ABREVE' on input line 78.
 
-
-LaTeX Warning: Citation `ref:r2' on page 1 undefined on input line 59.
-
-
-LaTeX Warning: Citation `ref:r3' on page 1 undefined on input line 59.
-
-<Images/11.png, id=5, 248.10216pt x 145.84384pt>
-File: Images/11.png Graphic file (type png)
-<use Images/11.png>
-Package pdftex.def Info: Images/11.png  used on input line 63. on input line 63
-.
-Package pdftex.def Info: Requested size: 248.10153pt x 145.84348pt on input lin
-e 63.
-<Images/64.png, id=6, 471.7625pt x 382.42876pt>
-File: Images/64.png Graphic file (type png)
-<use Images/64.png>
-Package pdftex.def Info: Images/64.png  used on input line 70. on input line 70
-.
-Package pdftex.def Info: Requested size: 188.70164pt x 152.96878pt on input lin
-e 70.
-
-Package hyperref Warning: Composite letter `\texttilde+u'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 76.
-
-
-Underfull \vbox (badness 3098) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./Images/44.png> <./Images/11.png> <./Images/64.png>]
-<Images/21.png, id=27, 121.95563pt x 67.75313pt>
+
+Package hyperref Warning: Composite letter `\texttilde+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\texttilde' on input line 81.
+
+<Images/21.png, id=96, 121.95563pt x 67.75313pt>
 File: Images/21.png Graphic file (type png)
 <use Images/21.png>
-Package pdftex.def Info: Images/21.png  used on input line 82. on input line 82
+Package pdftex.def Info: Images/21.png  used on input line 87. on input line 87
 .
 Package pdftex.def Info: Requested size: 121.9553pt x 67.75294pt on input line 
-82.
-<Images/48.png, id=28, 121.95563pt x 67.75313pt>
+87.
+<Images/48.png, id=97, 121.95563pt x 67.75313pt>
 File: Images/48.png Graphic file (type png)
 <use Images/48.png>
-Package pdftex.def Info: Images/48.png  used on input line 83. on input line 83
+Package pdftex.def Info: Images/48.png  used on input line 88. on input line 88
 .
 Package pdftex.def Info: Requested size: 121.9553pt x 67.75294pt on input line 
-83.
-<Images/59.png, id=29, 121.95563pt x 67.75313pt>
+88.
+<Images/59.png, id=98, 121.95563pt x 67.75313pt>
 File: Images/59.png Graphic file (type png)
 <use Images/59.png>
-Package pdftex.def Info: Images/59.png  used on input line 84. on input line 84
+Package pdftex.def Info: Images/59.png  used on input line 89. on input line 89
 .
 Package pdftex.def Info: Requested size: 121.9553pt x 67.75294pt on input line 
-84.
-<Images/65.png, id=30, 322.20375pt x 179.67125pt>
+89.
+<Images/65.png, id=99, 322.20375pt x 179.67125pt>
 File: Images/65.png Graphic file (type png)
 <use Images/65.png>
-Package pdftex.def Info: Images/65.png  used on input line 85. on input line 85
+Package pdftex.def Info: Images/65.png  used on input line 90. on input line 90
 .
 Package pdftex.def Info: Requested size: 120.8261pt x 67.37654pt on input line 
-85.
-<Images/57.png, id=31, 120.58534pt x 66.99185pt>
+90.
+<Images/57.png, id=100, 120.58534pt x 66.99185pt>
 File: Images/57.png Graphic file (type png)
 <use Images/57.png>
-Package pdftex.def Info: Images/57.png  used on input line 86. on input line 86
+Package pdftex.def Info: Images/57.png  used on input line 91. on input line 91
 .
 Package pdftex.def Info: Requested size: 120.58504pt x 66.99167pt on input line
- 86.
-<Images/36.png, id=32, 120.58534pt x 66.99185pt>
+ 91.
+<Images/36.png, id=101, 120.58534pt x 66.99185pt>
 File: Images/36.png Graphic file (type png)
 <use Images/36.png>
-Package pdftex.def Info: Images/36.png  used on input line 87. on input line 87
+Package pdftex.def Info: Images/36.png  used on input line 92. on input line 92
 .
 Package pdftex.def Info: Requested size: 120.58504pt x 66.99167pt on input line
- 87.
-
+ 92.
 
 Package hyperref Warning: Composite letter `\textacute+\abreve'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 92.
+(hyperref)                removing `\textacute' on input line 97.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\abreve' on input line 92.
+(hyperref)                removing `\abreve' on input line 97.
 
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 103.
 
-LaTeX Warning: Citation `ref:r4' on page 2 undefined on input line 94.
-
-
-LaTeX Warning: Citation `ref:r6' on page 2 undefined on input line 94.
-
-
-LaTeX Warning: Citation `ref:r7' on page 2 undefined on input line 94.
-
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 98.
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 98.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 103.
+
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 98.
-
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 103
+.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 98.
-
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 103
+.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 98.
+(Font)              <10> on input line 103.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 98.
+(Font)              <7> on input line 103.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 98.
-LaTeX Font Info:    Try loading font information for U+msa on input line 98.
+(Font)              <5> on input line 103.
+LaTeX Font Info:    Try loading font information for U+msa on input line 103.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 98.
+LaTeX Font Info:    Try loading font information for U+msb on input line 103.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Images/66.png, id=33, 322.20375pt x 171.64125pt>
+<Images/66.png, id=105, 322.20375pt x 171.64125pt>
 File: Images/66.png Graphic file (type png)
 <use Images/66.png>
-Package pdftex.def Info: Images/66.png  used on input line 101. on input line 1
-01.
+Package pdftex.def Info: Images/66.png  used on input line 106. on input line 1
+06.
 Package pdftex.def Info: Requested size: 122.43869pt x 65.22433pt on input line
- 101.
-<Images/67.png, id=34, 318.18875pt x 174.6525pt>
+ 106.
+<Images/67.png, id=106, 318.18875pt x 174.6525pt>
 File: Images/67.png Graphic file (type png)
 <use Images/67.png>
-Package pdftex.def Info: Images/67.png  used on input line 102. on input line 1
-02.
+Package pdftex.def Info: Images/67.png  used on input line 107. on input line 1
+07.
 Package pdftex.def Info: Requested size: 120.91296pt x 66.36864pt on input line
- 102.
-<Images/68.png, id=35, 323.2075pt x 174.6525pt>
+ 107.
+<Images/68.png, id=107, 323.2075pt x 174.6525pt>
 File: Images/68.png Graphic file (type png)
 <use Images/68.png>
-Package pdftex.def Info: Images/68.png  used on input line 103. on input line 1
-03.
+Package pdftex.def Info: Images/68.png  used on input line 108. on input line 1
+08.
 Package pdftex.def Info: Requested size: 122.82011pt x 66.36864pt on input line
- 103.
-<Images/70.png, id=36, 318.18875pt x 178.6675pt>
+ 108.
+<Images/70.png, id=108, 318.18875pt x 178.6675pt>
 File: Images/70.png Graphic file (type png)
 <use Images/70.png>
-Package pdftex.def Info: Images/70.png  used on input line 104. on input line 1
-04.
+Package pdftex.def Info: Images/70.png  used on input line 109. on input line 1
+09.
 Package pdftex.def Info: Requested size: 120.91296pt x 67.89435pt on input line
- 104.
-<Images/35.png, id=37, 92.15857pt x 115.23914pt>
+ 109.
+<Images/35.png, id=109, 92.15857pt x 115.23914pt>
 File: Images/35.png Graphic file (type png)
 <use Images/35.png>
-Package pdftex.def Info: Images/35.png  used on input line 111. on input line 1
-11.
+Package pdftex.def Info: Images/35.png  used on input line 116. on input line 1
+16.
 Package pdftex.def Info: Requested size: 92.15834pt x 115.23885pt on input line
- 111.
-<Images/41.png, id=38, 92.15857pt x 115.23914pt>
+ 116.
+<Images/41.png, id=110, 92.15857pt x 115.23914pt>
 File: Images/41.png Graphic file (type png)
 <use Images/41.png>
-Package pdftex.def Info: Images/41.png  used on input line 112. on input line 1
-12.
+Package pdftex.def Info: Images/41.png  used on input line 117. on input line 1
+17.
 Package pdftex.def Info: Requested size: 92.15834pt x 115.23885pt on input line
- 112.
-<Images/9.png, id=39, 92.15857pt x 115.23914pt>
+ 117.
+<Images/9.png, id=111, 92.15857pt x 115.23914pt>
 File: Images/9.png Graphic file (type png)
 <use Images/9.png>
-Package pdftex.def Info: Images/9.png  used on input line 113. on input line 11
-3.
+Package pdftex.def Info: Images/9.png  used on input line 118. on input line 11
+8.
 Package pdftex.def Info: Requested size: 92.15834pt x 115.23885pt on input line
- 113.
+ 118.
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []\T5/lmr/m/n/8 (c) M­t ph£i Emma
  []
 
-<Images/8.png, id=40, 92.15857pt x 115.23914pt>
+<Images/8.png, id=112, 92.15857pt x 115.23914pt>
 File: Images/8.png Graphic file (type png)
 <use Images/8.png>
-Package pdftex.def Info: Images/8.png  used on input line 114. on input line 11
-4.
+Package pdftex.def Info: Images/8.png  used on input line 119. on input line 11
+9.
 Package pdftex.def Info: Requested size: 92.15834pt x 115.23885pt on input line
- 114.
-<Images/32.png, id=41, 92.15857pt x 115.23914pt>
+ 119.
+<Images/32.png, id=113, 92.15857pt x 115.23914pt>
 File: Images/32.png Graphic file (type png)
 <use Images/32.png>
-Package pdftex.def Info: Images/32.png  used on input line 115. on input line 1
-15.
+Package pdftex.def Info: Images/32.png  used on input line 120. on input line 1
+20.
 Package pdftex.def Info: Requested size: 92.15834pt x 115.23885pt on input line
- 115.
-<Images/29.png, id=42, 92.16083pt x 113.90813pt>
+ 120.
+<Images/29.png, id=114, 92.16083pt x 113.90813pt>
 File: Images/29.png Graphic file (type png)
 <use Images/29.png>
-Package pdftex.def Info: Images/29.png  used on input line 116. on input line 1
-16.
+Package pdftex.def Info: Images/29.png  used on input line 121. on input line 1
+21.
 Package pdftex.def Info: Requested size: 92.16058pt x 113.90784pt on input line
- 116.
-<Images/34.png, id=43, 92.16083pt x 113.90813pt>
+ 121.
+<Images/34.png, id=115, 92.16083pt x 113.90813pt>
 File: Images/34.png Graphic file (type png)
 <use Images/34.png>
-Package pdftex.def Info: Images/34.png  used on input line 117. on input line 1
-17.
+Package pdftex.def Info: Images/34.png  used on input line 122. on input line 1
+22.
 Package pdftex.def Info: Requested size: 92.16058pt x 113.90784pt on input line
- 117.
-<Images/26.png, id=44, 92.16083pt x 113.90813pt>
+ 122.
+<Images/26.png, id=116, 92.16083pt x 113.90813pt>
 File: Images/26.png Graphic file (type png)
 <use Images/26.png>
-Package pdftex.def Info: Images/26.png  used on input line 118. on input line 1
-18.
+Package pdftex.def Info: Images/26.png  used on input line 123. on input line 1
+23.
 Package pdftex.def Info: Requested size: 92.16058pt x 113.90784pt on input line
- 118.
-<Images/24.png, id=45, 92.16083pt x 113.90813pt>
+ 123.
+<Images/24.png, id=117, 92.16083pt x 113.90813pt>
 File: Images/24.png Graphic file (type png)
 <use Images/24.png>
-Package pdftex.def Info: Images/24.png  used on input line 119. on input line 1
-19.
+Package pdftex.def Info: Images/24.png  used on input line 124. on input line 1
+24.
 Package pdftex.def Info: Requested size: 92.16058pt x 113.90784pt on input line
- 119.
-<Images/51.png, id=46, 92.16083pt x 113.90813pt>
+ 124.
+<Images/51.png, id=118, 92.16083pt x 113.90813pt>
 File: Images/51.png Graphic file (type png)
 <use Images/51.png>
-Package pdftex.def Info: Images/51.png  used on input line 120. on input line 1
-20.
+Package pdftex.def Info: Images/51.png  used on input line 125. on input line 1
+25.
 Package pdftex.def Info: Requested size: 92.16058pt x 113.90784pt on input line
- 120.
-
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 125.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 125.
-
-<Images/63.png, id=47, 120.45pt x 120.45pt>
+ 125.
+<Images/63.png, id=119, 120.45pt x 120.45pt>
 File: Images/63.png Graphic file (type png)
 <use Images/63.png>
-Package pdftex.def Info: Images/63.png  used on input line 129. on input line 1
-29.
+Package pdftex.def Info: Images/63.png  used on input line 132. on input line 1
+32.
 Package pdftex.def Info: Requested size: 120.44969pt x 120.44969pt on input lin
-e 129.
-<Images/61.png, id=48, 120.45pt x 120.45pt>
+e 132.
+<Images/61.png, id=120, 120.45pt x 120.45pt>
 File: Images/61.png Graphic file (type png)
 <use Images/61.png>
-Package pdftex.def Info: Images/61.png  used on input line 130. on input line 1
-30.
+Package pdftex.def Info: Images/61.png  used on input line 133. on input line 1
+33.
 Package pdftex.def Info: Requested size: 120.44969pt x 120.44969pt on input lin
-e 130.
-<Images/13.png, id=49, 121.73138pt x 121.73138pt>
+e 133.
+<Images/13.png, id=121, 121.73138pt x 121.73138pt>
 File: Images/13.png Graphic file (type png)
 <use Images/13.png>
-Package pdftex.def Info: Images/13.png  used on input line 131. on input line 1
-31.
+Package pdftex.def Info: Images/13.png  used on input line 134. on input line 1
+34.
 Package pdftex.def Info: Requested size: 121.73106pt x 121.73106pt on input lin
-e 131.
+e 134.
 
-Underfull \hbox (badness 1521) in paragraph at lines 131--131
+Underfull \hbox (badness 1521) in paragraph at lines 134--134
 []\T5/lmr/m/n/8 (c) Mouth mask based on lip
  []
 
-<Images/30.png, id=50, 121.73138pt x 121.73138pt>
+<Images/30.png, id=122, 121.73138pt x 121.73138pt>
 File: Images/30.png Graphic file (type png)
 <use Images/30.png>
-Package pdftex.def Info: Images/30.png  used on input line 132. on input line 1
-32.
+Package pdftex.def Info: Images/30.png  used on input line 135. on input line 1
+35.
 Package pdftex.def Info: Requested size: 121.73106pt x 121.73106pt on input lin
-e 132.
+e 135.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 140.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 140.
 
 [2 <./Images/21.png> <./Images/48.png> <./Images/59.png> <./Images/65.png> <./I
 mages/57.png> <./Images/36.png> <./Images/66.png> <./Images/67.png> <./Images/6
 8.png> <./Images/70.png>]
-<Images/12.png, id=75, 122.04536pt x 122.04536pt>
+
+LaTeX Warning: Text page 3 contains only floats.
+
+<Images/12.png, id=147, 122.04536pt x 122.04536pt>
 File: Images/12.png Graphic file (type png)
 <use Images/12.png>
-Package pdftex.def Info: Images/12.png  used on input line 145. on input line 1
-45.
+Package pdftex.def Info: Images/12.png  used on input line 146. on input line 1
+46.
 Package pdftex.def Info: Requested size: 122.04504pt x 122.04504pt on input lin
-e 145.
-<Images/3.png, id=76, 120.45pt x 120.45pt>
+e 146.
+<Images/3.png, id=148, 120.45pt x 120.45pt>
 File: Images/3.png Graphic file (type png)
 <use Images/3.png>
-Package pdftex.def Info: Images/3.png  used on input line 146. on input line 14
-6.
+Package pdftex.def Info: Images/3.png  used on input line 147. on input line 14
+7.
 Package pdftex.def Info: Requested size: 120.44969pt x 120.44969pt on input lin
-e 146.
+e 147.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation `ref:r9' on page 3 undefined on input line 152.
-
-[3 <./Images/35.png> <./Images/41.png> <./Images/9.png> <./Images/8.png> <./Ima
-ges/32.png> <./Images/29.png> <./Images/34.png> <./Images/26.png> <./Images/24.
-png> <./Images/51.png> <./Images/63.png> <./Images/61.png> <./Images/13.png> <.
-/Images/30.png> <./Images/12.png> <./Images/3.png>]
+ [3 <./Images/35.png> <./Images/41.png> <./Images/9.png> <./Images/8.png> <./Im
+ages/32.png> <./Images/29.png> <./Images/34.png> <./Images/26.png> <./Images/24
+.png> <./Images/51.png> <./Images/63.png> <./Images/61.png> <./Images/13.png> <
+./Images/30.png> <./Images/12.png> <./Images/3.png>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 156.
+(hyperref)                removing `\h' on input line 161.
 
 
 Package hyperref Warning: Composite letter `\textacute+\OCIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 156.
+(hyperref)                removing `\textacute' on input line 161.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\OCIRCUMFLEX' on input line 156.
+(hyperref)                removing `\OCIRCUMFLEX' on input line 161.
 
-<Images/17.png, id=101, 126.58069pt x 177.21297pt>
+<Images/17.png, id=173, 126.58069pt x 177.21297pt>
 File: Images/17.png Graphic file (type png)
 <use Images/17.png>
-Package pdftex.def Info: Images/17.png  used on input line 161. on input line 1
-61.
+Package pdftex.def Info: Images/17.png  used on input line 166. on input line 1
+66.
 Package pdftex.def Info: Requested size: 126.58037pt x 177.21252pt on input lin
-e 161.
+e 166.
+<Images/16.png, id=174, 88.63777pt x 54.89499pt>
+File: Images/16.png Graphic file (type png)
+<use Images/16.png>
+Package pdftex.def Info: Images/16.png  used on input line 175. on input line 1
+75.
+Package pdftex.def Info: Requested size: 85.97852pt x 53.24805pt on input line 
+175.
+<Images/22.png, id=175, 125.49588pt x 61.77132pt>
+File: Images/22.png Graphic file (type png)
+<use Images/22.png>
+Package pdftex.def Info: Images/22.png  used on input line 176. on input line 1
+76.
+Package pdftex.def Info: Requested size: 125.49556pt x 61.77116pt on input line
+ 176.
+<Images/31.png, id=176, 120.54753pt x 63.19968pt>
+File: Images/31.png Graphic file (type png)
+<use Images/31.png>
+Package pdftex.def Info: Images/31.png  used on input line 177. on input line 1
+77.
+Package pdftex.def Info: Requested size: 120.54723pt x 63.19951pt on input line
+ 177.
+<Images/43.png, id=177, 120.64665pt x 63.42061pt>
+File: Images/43.png Graphic file (type png)
+<use Images/43.png>
+Package pdftex.def Info: Images/43.png  used on input line 178. on input line 1
+78.
+Package pdftex.def Info: Requested size: 120.64635pt x 63.42043pt on input line
+ 178.
+<Images/50.png, id=178, 121.76584pt x 63.16034pt>
+File: Images/50.png Graphic file (type png)
+<use Images/50.png>
+Package pdftex.def Info: Images/50.png  used on input line 179. on input line 1
+79.
+Package pdftex.def Info: Requested size: 121.76553pt x 63.16017pt on input line
+ 179.
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ABREVE'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 168.
+(hyperref)                removing `\textdotbelow' on input line 184.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ABREVE' on input line 168.
-
-
-LaTeX Warning: Citation `ref:r10' on page 4 undefined on input line 169.
-
-
-LaTeX Warning: Citation `ref:r11' on page 4 undefined on input line 169.
+(hyperref)                removing `\ABREVE' on input line 184.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 170.
+(hyperref)                removing `\h' on input line 186.
 
-<Images/16.png, id=102, 88.63777pt x 54.89499pt>
-File: Images/16.png Graphic file (type png)
-<use Images/16.png>
-Package pdftex.def Info: Images/16.png  used on input line 197. on input line 1
-97.
-Package pdftex.def Info: Requested size: 85.97852pt x 53.24805pt on input line 
-197.
-<Images/22.png, id=103, 125.49588pt x 61.77132pt>
-File: Images/22.png Graphic file (type png)
-<use Images/22.png>
-Package pdftex.def Info: Images/22.png  used on input line 198. on input line 1
-98.
-Package pdftex.def Info: Requested size: 125.49556pt x 61.77116pt on input line
- 198.
-<Images/31.png, id=104, 120.54753pt x 63.19968pt>
-File: Images/31.png Graphic file (type png)
-<use Images/31.png>
-Package pdftex.def Info: Images/31.png  used on input line 199. on input line 1
-99.
-Package pdftex.def Info: Requested size: 120.54723pt x 63.19951pt on input line
- 199.
-<Images/43.png, id=105, 120.64665pt x 63.42061pt>
-File: Images/43.png Graphic file (type png)
-<use Images/43.png>
-Package pdftex.def Info: Images/43.png  used on input line 200. on input line 2
-00.
-Package pdftex.def Info: Requested size: 120.64635pt x 63.42043pt on input line
- 200.
-<Images/50.png, id=106, 121.76584pt x 63.16034pt>
-File: Images/50.png Graphic file (type png)
-<use Images/50.png>
-Package pdftex.def Info: Images/50.png  used on input line 201. on input line 2
-01.
-Package pdftex.def Info: Requested size: 121.76553pt x 63.16017pt on input line
- 201.
 [4 <./Images/17.png> <./Images/16.png> <./Images/22.png> <./Images/31.png> <./I
 mages/43.png> <./Images/50.png>]
-
-Package hyperref Warning: Composite letter `\textdotbelow+a'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 213.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 213.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 213.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 213.
-
 File: Images/43.png Graphic file (type png)
 <use Images/43.png>
-Package pdftex.def Info: Images/43.png  used on input line 217. on input line 2
-17.
+Package pdftex.def Info: Images/43.png  used on input line 221. on input line 2
+21.
 Package pdftex.def Info: Requested size: 120.64635pt x 63.42043pt on input line
- 217.
-<Images/19.png, id=125, 114.19586pt x 31.03903pt>
+ 221.
+<Images/19.png, id=197, 114.19586pt x 31.03903pt>
 File: Images/19.png Graphic file (type png)
 <use Images/19.png>
-Package pdftex.def Info: Images/19.png  used on input line 218. on input line 2
-18.
+Package pdftex.def Info: Images/19.png  used on input line 222. on input line 2
+22.
 Package pdftex.def Info: Requested size: 114.19557pt x 31.03894pt on input line
- 218.
-<Images/46.png, id=126, 121.62512pt x 40.79352pt>
+ 222.
+<Images/46.png, id=198, 121.62512pt x 40.79352pt>
 File: Images/46.png Graphic file (type png)
 <use Images/46.png>
-Package pdftex.def Info: Images/46.png  used on input line 219. on input line 2
-19.
+Package pdftex.def Info: Images/46.png  used on input line 223. on input line 2
+23.
 Package pdftex.def Info: Requested size: 121.6248pt x 40.7934pt on input line 2
-19.
-<Images/6.png, id=127, 121.46431pt x 41.07979pt>
+23.
+<Images/6.png, id=199, 121.46431pt x 41.07979pt>
 File: Images/6.png Graphic file (type png)
 <use Images/6.png>
-Package pdftex.def Info: Images/6.png  used on input line 220. on input line 22
-0.
+Package pdftex.def Info: Images/6.png  used on input line 224. on input line 22
+4.
 Package pdftex.def Info: Requested size: 121.464pt x 41.07968pt on input line 2
-20.
-<Images/15.png, id=128, 121.62512pt x 41.29715pt>
+24.
+<Images/15.png, id=200, 121.62512pt x 41.29715pt>
 File: Images/15.png Graphic file (type png)
 <use Images/15.png>
-Package pdftex.def Info: Images/15.png  used on input line 221. on input line 2
-21.
+Package pdftex.def Info: Images/15.png  used on input line 225. on input line 2
+25.
 Package pdftex.def Info: Requested size: 121.6248pt x 41.29704pt on input line 
-221.
-<Images/60.png, id=129, 123.55838pt x 68.77307pt>
+225.
+<Images/60.png, id=201, 123.55838pt x 68.77307pt>
 File: Images/60.png Graphic file (type png)
 <use Images/60.png>
-Package pdftex.def Info: Images/60.png  used on input line 234. on input line 2
-34.
+Package pdftex.def Info: Images/60.png  used on input line 232. on input line 2
+32.
 Package pdftex.def Info: Requested size: 123.55807pt x 68.77289pt on input line
- 234.
+ 232.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 234.
+(Font)              <8> on input line 232.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 234.
-<Images/18.png, id=130, 122.11137pt x 72.27pt>
+(Font)              <6> on input line 232.
+<Images/18.png, id=202, 122.11137pt x 72.27pt>
 File: Images/18.png Graphic file (type png)
 <use Images/18.png>
-Package pdftex.def Info: Images/18.png  used on input line 235. on input line 2
-35.
+Package pdftex.def Info: Images/18.png  used on input line 233. on input line 2
+33.
 Package pdftex.def Info: Requested size: 122.11105pt x 72.2698pt on input line 
-235.
-<Images/5.png, id=131, 122.11137pt x 72.27pt>
+233.
+<Images/5.png, id=203, 122.11137pt x 72.27pt>
 File: Images/5.png Graphic file (type png)
 <use Images/5.png>
-Package pdftex.def Info: Images/5.png  used on input line 236. on input line 23
-6.
+Package pdftex.def Info: Images/5.png  used on input line 234. on input line 23
+4.
 Package pdftex.def Info: Requested size: 122.11105pt x 72.2698pt on input line 
-236.
-<Images/53.png, id=132, 123.55838pt x 68.77307pt>
+234.
+<Images/53.png, id=204, 123.55838pt x 68.77307pt>
 File: Images/53.png Graphic file (type png)
 <use Images/53.png>
-Package pdftex.def Info: Images/53.png  used on input line 237. on input line 2
-37.
+Package pdftex.def Info: Images/53.png  used on input line 235. on input line 2
+35.
 Package pdftex.def Info: Requested size: 123.55807pt x 68.77289pt on input line
- 237.
-<Images/55.png, id=133, 122.11137pt x 112.1431pt>
+ 235.
+<Images/55.png, id=205, 122.11137pt x 112.1431pt>
 File: Images/55.png Graphic file (type png)
 <use Images/55.png>
-Package pdftex.def Info: Images/55.png  used on input line 238. on input line 2
-38.
+Package pdftex.def Info: Images/55.png  used on input line 236. on input line 2
+36.
 Package pdftex.def Info: Requested size: 122.11105pt x 112.1428pt on input line
- 238.
-<Images/42.png, id=134, 122.11137pt x 112.1431pt>
+ 236.
+<Images/42.png, id=206, 122.11137pt x 112.1431pt>
 File: Images/42.png Graphic file (type png)
 <use Images/42.png>
-Package pdftex.def Info: Images/42.png  used on input line 239. on input line 2
-39.
+Package pdftex.def Info: Images/42.png  used on input line 237. on input line 2
+37.
 Package pdftex.def Info: Requested size: 122.11105pt x 112.1428pt on input line
- 239.
-<Images/23.png, id=135, 121.47511pt x 60.99384pt>
+ 237.
+<Images/23.png, id=207, 121.47511pt x 60.99384pt>
 File: Images/23.png Graphic file (type png)
 <use Images/23.png>
-Package pdftex.def Info: Images/23.png  used on input line 240. on input line 2
-40.
+Package pdftex.def Info: Images/23.png  used on input line 238. on input line 2
+38.
 Package pdftex.def Info: Requested size: 121.47481pt x 60.99367pt on input line
- 240.
-<Images/33.png, id=136, 121.47511pt x 60.99384pt>
+ 238.
+<Images/33.png, id=208, 121.47511pt x 60.99384pt>
 File: Images/33.png Graphic file (type png)
 <use Images/33.png>
-Package pdftex.def Info: Images/33.png  used on input line 241. on input line 2
-41.
+Package pdftex.def Info: Images/33.png  used on input line 239. on input line 2
+39.
 Package pdftex.def Info: Requested size: 121.47481pt x 60.99367pt on input line
- 241.
-<Images/14.png, id=137, 75.19421pt x 100.81595pt>
+ 239.
+<Images/14.png, id=209, 75.19421pt x 100.81595pt>
 File: Images/14.png Graphic file (type png)
 <use Images/14.png>
-Package pdftex.def Info: Images/14.png  used on input line 248. on input line 2
-48.
+Package pdftex.def Info: Images/14.png  used on input line 246. on input line 2
+46.
 Package pdftex.def Info: Requested size: 71.43408pt x 95.77458pt on input line 
-248.
-<Images/38.png, id=138, 75.24313pt x 98.45644pt>
+246.
+<Images/38.png, id=210, 75.24313pt x 98.45644pt>
 File: Images/38.png Graphic file (type png)
 <use Images/38.png>
-Package pdftex.def Info: Images/38.png  used on input line 249. on input line 2
-49.
+Package pdftex.def Info: Images/38.png  used on input line 247. on input line 2
+47.
 Package pdftex.def Info: Requested size: 75.24294pt x 98.45619pt on input line 
-249.
-<Images/58.png, id=139, 74.19917pt x 88.44542pt>
+247.
+<Images/58.png, id=211, 74.19917pt x 88.44542pt>
 File: Images/58.png Graphic file (type png)
 <use Images/58.png>
-Package pdftex.def Info: Images/58.png  used on input line 250. on input line 2
-50.
+Package pdftex.def Info: Images/58.png  used on input line 248. on input line 2
+48.
 Package pdftex.def Info: Requested size: 74.19899pt x 88.44519pt on input line 
-250.
-<Images/10.png, id=140, 130.80544pt x 65.40271pt>
+248.
+<Images/10.png, id=212, 130.80544pt x 65.40271pt>
 File: Images/10.png Graphic file (type png)
 <use Images/10.png>
-Package pdftex.def Info: Images/10.png  used on input line 251. on input line 2
-51.
+Package pdftex.def Info: Images/10.png  used on input line 249. on input line 2
+49.
 Package pdftex.def Info: Requested size: 91.56316pt x 45.78157pt on input line 
-251.
-<Images/45.png, id=141, 75.2758pt x 88.08315pt>
+249.
+<Images/45.png, id=213, 75.2758pt x 88.08315pt>
 File: Images/45.png Graphic file (type png)
 <use Images/45.png>
-Package pdftex.def Info: Images/45.png  used on input line 252. on input line 2
-52.
+Package pdftex.def Info: Images/45.png  used on input line 250. on input line 2
+50.
 Package pdftex.def Info: Requested size: 67.74757pt x 79.27408pt on input line 
-252.
-<Images/25.png, id=142, 74.53935pt x 66.68391pt>
+250.
+<Images/25.png, id=214, 74.53935pt x 66.68391pt>
 File: Images/25.png Graphic file (type png)
 <use Images/25.png>
-Package pdftex.def Info: Images/25.png  used on input line 253. on input line 2
-53.
+Package pdftex.def Info: Images/25.png  used on input line 251. on input line 2
+51.
 Package pdftex.def Info: Requested size: 74.53915pt x 66.68373pt on input line 
-253.
-<Images/28.png, id=143, 75.2451pt x 90.24452pt>
+251.
+<Images/28.png, id=215, 75.2451pt x 90.24452pt>
 File: Images/28.png Graphic file (type png)
 <use Images/28.png>
-Package pdftex.def Info: Images/28.png  used on input line 254. on input line 2
-54.
+Package pdftex.def Info: Images/28.png  used on input line 252. on input line 2
+52.
 Package pdftex.def Info: Requested size: 75.2449pt x 90.2443pt on input line 25
-4.
+2.
 File: Images/29.png Graphic file (type png)
 <use Images/29.png>
-Package pdftex.def Info: Images/29.png  used on input line 255. on input line 2
-55.
+Package pdftex.def Info: Images/29.png  used on input line 253. on input line 2
+53.
 Package pdftex.def Info: Requested size: 73.72874pt x 91.1266pt on input line 2
-55.
+53.
 
-Underfull \hbox (badness 2538) in paragraph at lines 255--255
+Underfull \hbox (badness 2538) in paragraph at lines 253--253
 []\T5/lmr/m/n/8 (h) H¼nh £nh cha
  []
 
 File: Images/58.png Graphic file (type png)
 <use Images/58.png>
-Package pdftex.def Info: Images/58.png  used on input line 256. on input line 2
-56.
+Package pdftex.def Info: Images/58.png  used on input line 254. on input line 2
+54.
 Package pdftex.def Info: Requested size: 74.19899pt x 88.44519pt on input line 
-256.
-<Images/62.png, id=144, 75.20291pt x 112.80437pt>
+254.
+<Images/62.png, id=216, 75.20291pt x 112.80437pt>
 File: Images/62.png Graphic file (type png)
 <use Images/62.png>
-Package pdftex.def Info: Images/62.png  used on input line 257. on input line 2
-57.
+Package pdftex.def Info: Images/62.png  used on input line 255. on input line 2
+55.
 Package pdftex.def Info: Requested size: 60.1624pt x 90.24359pt on input line 2
-57.
+55.
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--257
+Underfull \hbox (badness 10000) in paragraph at lines 255--255
 []\T5/lmr/m/n/8 (j) H¼nh £nh
  []
 
-<Images/39.png, id=145, 75.35352pt x 95.01096pt>
+<Images/39.png, id=217, 75.35352pt x 95.01096pt>
 File: Images/39.png Graphic file (type png)
 <use Images/39.png>
-Package pdftex.def Info: Images/39.png  used on input line 258. on input line 2
-58.
+Package pdftex.def Info: Images/39.png  used on input line 256. on input line 2
+56.
 Package pdftex.def Info: Requested size: 75.35332pt x 95.01071pt on input line 
-258.
-<Images/49.png, id=146, 74.51764pt x 69.84947pt>
+256.
+<Images/49.png, id=218, 74.51764pt x 69.84947pt>
 File: Images/49.png Graphic file (type png)
 <use Images/49.png>
-Package pdftex.def Info: Images/49.png  used on input line 259. on input line 2
-59.
+Package pdftex.def Info: Images/49.png  used on input line 257. on input line 2
+57.
 Package pdftex.def Info: Requested size: 74.51744pt x 69.84929pt on input line 
-259.
-<Images/2.png, id=147, 75.16724pt x 72.43095pt>
+257.
+<Images/2.png, id=219, 75.16724pt x 72.43095pt>
 File: Images/2.png Graphic file (type png)
 <use Images/2.png>
-Package pdftex.def Info: Images/2.png  used on input line 260. on input line 26
-0.
+Package pdftex.def Info: Images/2.png  used on input line 258. on input line 25
+8.
 Package pdftex.def Info: Requested size: 75.16705pt x 72.43077pt on input line 
-260.
+258.
 
-Underfull \hbox (badness 1838) in paragraph at lines 260--260
+Underfull \hbox (badness 1838) in paragraph at lines 258--258
 []\T5/lmr/m/n/8 (m) H¼nh £nh cha
  []
 
-<Images/27.png, id=148, 75.20781pt x 56.40585pt>
+<Images/27.png, id=220, 75.20781pt x 56.40585pt>
 File: Images/27.png Graphic file (type png)
 <use Images/27.png>
-Package pdftex.def Info: Images/27.png  used on input line 261. on input line 2
-61.
+Package pdftex.def Info: Images/27.png  used on input line 259. on input line 2
+59.
 Package pdftex.def Info: Requested size: 75.20761pt x 56.4057pt on input line 2
-61.
-<Images/56.png, id=149, 74.26471pt x 76.71974pt>
+59.
+<Images/56.png, id=221, 74.26471pt x 76.71974pt>
 File: Images/56.png Graphic file (type png)
 <use Images/56.png>
-Package pdftex.def Info: Images/56.png  used on input line 262. on input line 2
-62.
+Package pdftex.def Info: Images/56.png  used on input line 260. on input line 2
+60.
 Package pdftex.def Info: Requested size: 74.26453pt x 76.71954pt on input line 
-262.
+260.
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 265.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 265.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 265.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 265.
+
 [5 <./Images/19.png> <./Images/46.png> <./Images/6.png> <./Images/15.png> <./Im
 ages/60.png> <./Images/18.png> <./Images/5.png> <./Images/53.png> <./Images/55.
 png> <./Images/42.png> <./Images/23.png> <./Images/33.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package hyperref Warning: Composite letter `\textacute+\ECIRCUMFLEX'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 270.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ECIRCUMFLEX' on input line 270.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 270.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ECIRCUMFLEX'
@@ -1684,14 +1692,30 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ECIRCUMFLEX' on input line 276.
 
 
-Package hyperref Warning: Composite letter `\textdotbelow+\ACIRCUMFLEX'
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 276.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ECIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 276.
+(hyperref)                removing `\textacute' on input line 282.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ACIRCUMFLEX' on input line 276.
+(hyperref)                removing `\ECIRCUMFLEX' on input line 282.
 
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ACIRCUMFLEX'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 282.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ACIRCUMFLEX' on input line 282.
+
+[6 <./Images/14.png> <./Images/38.png> <./Images/58.png> <./Images/10.png> <./I
+mages/45.png> <./Images/25.png> <./Images/28.png> <./Images/62.png> <./Images/3
+9.png> <./Images/49.png> <./Images/2.png> <./Images/27.png> <./Images/56.png>]
 (./report.bbl
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
@@ -1702,127 +1726,300 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 2.
 
-[6 <./Images/14.png> <./Images/38.png> <./Images/58.png> <./Images/10.png> <./I
-mages/45.png> <./Images/25.png> <./Images/28.png> <./Images/62.png> <./Images/3
-9.png> <./Images/49.png> <./Images/2.png> <./Images/27.png> <./Images/56.png>])
+)
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+[7]
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 287.
+(hyperref)                removing `\textdotbelow' on input line 295.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 287.
+(hyperref)                removing `\textdotbelow' on input line 295.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\UHORN' on input line 287.
+(hyperref)                removing `\UHORN' on input line 295.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\OHORN' on input line 287.
+(hyperref)                removing `\OHORN' on input line 295.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 287.
+(hyperref)                removing `\h' on input line 295.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ECIRCUMFLEX' on input line 287.
+(hyperref)                removing `\ECIRCUMFLEX' on input line 295.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ACIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 287.
+(hyperref)                removing `\textacute' on input line 295.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ACIRCUMFLEX' on input line 287.
+(hyperref)                removing `\ACIRCUMFLEX' on input line 295.
 
 
 Package hyperref Warning: Composite letter `\textacute+\OCIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 287.
+(hyperref)                removing `\textacute' on input line 295.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\OCIRCUMFLEX' on input line 287.
+(hyperref)                removing `\OCIRCUMFLEX' on input line 295.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ABREVE'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 287.
+(hyperref)                removing `\textdotbelow' on input line 295.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ABREVE' on input line 287.
+(hyperref)                removing `\ABREVE' on input line 295.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--308
-\T5/lmr/m/n/10 C¡c ^^_iºm m§u chèt tr¶n m­t nh÷ ð H¼nh 3,
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--340
+
+ []
+
+
+Underfull \hbox (badness 4886) in paragraph at lines 341--343
+[]\T5/lmr/m/n/10 C¡c ^^_iºm m§u chèt tr¶n m­t nh÷ ð H¼nh 3,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--350
+
+ []
+
+
+Overfull \vbox (7.44579pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (7.44579pt too high) has occurred while \output is active []
+
+
+
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 310.
+(hyperref)                removing `\textdotbelow' on input line 351.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 310.
+(hyperref)                removing `\textdotbelow' on input line 351.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 357.
+[8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  73AED761E05517309F8597F6384C18A6;991.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 73AED761E05517309F8597F6384C18A6;991.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 357.
  ) 
 Here is how much of TeX's memory you used:
- 8607 strings out of 494382
- 124638 string characters out of 6169330
- 204581 words of memory out of 5000000
- 11742 multiletter control sequences out of 15000+600000
+ 8747 strings out of 494382
+ 126696 string characters out of 6169330
+ 216061 words of memory out of 5000000
+ 11873 multiletter control sequences out of 15000+600000
  281812 words of font info for 123 fonts, out of 8000000 for 9000
  286 hyphenation exceptions out of 8191
- 32i,14n,31p,1388b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,14n,31p,1388b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-t5.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx
-9.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb>
-Output written on report.pdf (7 pages, 25007041 bytes).
+f/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/font
+s/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb>
+
+Output written on report.pdf (8 pages, 24980783 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
+ 372 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
  116 named destinations out of 1000 (max. 500000)
- 301 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 words of extra memory for PDF output out of 10000 (max. 10000000)
 

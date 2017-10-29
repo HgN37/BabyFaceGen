@@ -1,4 +1,4 @@
-\documentclass[journal]{IEEEtran}
+\documentclass[conference]{IEEEtran}
 \usepackage{epsfig}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{vietnam}
@@ -18,17 +18,22 @@
     linkcolor=black,
     urlcolor=black
 }
-
-\title{Test}
-\author{HgN}
+\usepackage{multicol}
 
 \begin{document}
 
-\title{Tạo dựng khuôn mặt em bé \cite{ref:r0}}
-\author{Hoàng Gia Nguyên, Phùng Đức Nghĩa, Trần Hoàng Khôi Nguyên\\
-Khoa Điện - Điện tử\\
-Trường Đại học Bách Khoa TP.HCM, Việt Nam\\}
-
+\title{Tạo Dựng Khuôn Mặt Em Bé}
+\author{\IEEEauthorblockN{Sarah Divel}
+\IEEEauthorblockA{Department of Electrical Engineering\\
+Stanford University\\
+Stanford, CA 94305\\
+Email: sdivel@stanford.edu}
+\and
+\IEEEauthorblockN{Picha Shunhavanich}
+\IEEEauthorblockA{Department of Bioengineering\\
+Stanford University\\
+Stanford, CA 94305\\
+Email: picha@stanford.edu}}
 \maketitle
 
 \begin{center}
@@ -54,9 +59,6 @@ Bài báo này giới thiệu một phương pháp để tạo ra khuôn mặt e
 Việc xác định, phân tích và chỉnh sửa các hình ảnh có chứa khuôn mặt người vẫn là một lĩnh vực nghiên cứu đang hoạt động, bao hàm nhiều kỹ thuật xử lý ảnh. Một lĩnh vực con của lĩnh vực nghiên cứu này, kỹ thuật tự động phát hiện và trích xuất đặc trưng từ khuôn mặt, được ứng dụng phổ biến, từ phân tích biểu hiện khuôn mặt đến bảo mật riêng tư trong ứng dụng Google Street View \cite{ref:r1}. Một lĩnh vực con khác, kỹ thuật morphing khuôn mặt, cũng có một loạt các ứng dụng bao gồm nhận diện khuôn mặt, kết hợp hài hước hai khuôn mặt. Mục đích của bài báo này là thúc đẩy hai lĩnh vực trên cho ứng dụng giải trí, bằng việc chuyển đổi thông minh hai bức ảnh bố mẹ để tạo ra khuôn mặt em bé.
 
 Thuật toán được sử dụng để tạo khuôn mặt em bé, xem Hình 1, bao gồm ba thành phần chính: trích xuất đặc điểm khuôn mặt, lựa chọn em bé cơ bản, và morphing khuôn mặt. Các phần từ II đến IV thảo luận về các phương pháp và việc thực hiện cụ thể. Việc triển khai hệ thống tổng thể bao gồm một Giao diện đồ hoạ người dùng (GUI) của MATLAB, xem Hình 2, cho phép người dùng dễ dàng lựa chọn các hình ảnh từ file hoặc chụp nhanh bằng webcam và chạy mã morphing.
-
-\section{TRÍCH XUẤT ĐẶC TRƯNG KHUÔN MẶT}
-Bước đầu tiên để trích xuất đặc trưng khuôn mặt cho mỗi ảnh bố mẹ bao gồm việc phát hiện khuôn mặt dùng bộ dò Viola-Jones được cung cấp trong thư viện OpenCV \cite{ref:r2}. Đối với mỗi ảnh bố mẹ, các điểm mốc trên khuôn mặt (góc mắt, góc miệng và đầu mũi) được phát hiện bằng flandmark, một bộ dò có mã nguồn mở \cite{ref:r3}. Khung bao và các điểm mốc của khuôn mặt sau đó được sử dụng để tính bổ sung cho các điểm mấu chốt, xem Hình 3. Chi tiết xem trong phần Phụ lục A. Những điểm mấu chốt này được kết hợp với bộ dò biên để trích xuất đặc trưng của mỗi khuôn mặt, được diễn giải trong Phần II-A đến II-D.
 \begin{center}
     \begin{figure}[!t]
     \begin{center}
@@ -73,6 +75,9 @@ Bước đầu tiên để trích xuất đặc trưng khuôn mặt cho mỗi �
     \label{refhinh3}
     \end{figure}
 \end{center}
+\section{TRÍCH XUẤT ĐẶC TRƯNG KHUÔN MẶT}
+Bước đầu tiên để trích xuất đặc trưng khuôn mặt cho mỗi ảnh bố mẹ bao gồm việc phát hiện khuôn mặt dùng bộ dò Viola-Jones được cung cấp trong thư viện OpenCV \cite{ref:r2}. Đối với mỗi ảnh bố mẹ, các điểm mốc trên khuôn mặt (góc mắt, góc miệng và đầu mũi) được phát hiện bằng flandmark, một bộ dò có mã nguồn mở \cite{ref:r3}. Khung bao và các điểm mốc của khuôn mặt sau đó được sử dụng để tính bổ sung cho các điểm mấu chốt, xem Hình 3. Chi tiết xem trong phần Phụ lục A. Những điểm mấu chốt này được kết hợp với bộ dò biên để trích xuất đặc trưng của mỗi khuôn mặt, được diễn giải trong Phần II-A đến II-D.
+
 \subsection{Mũi}
 
 Việc trích xuất mũi chỉ cần dựa vào vùng hình thang tạo thành từ các điểm mấu chốt 4, 5, 7 và 6 theo ngược chiều kim đồng hồ. Sự lựa chọn này đến từ hai nhận xét: (1) những điểm mốc và điểm mấu chốt xung quanh mũi được phát hiện với độ chính xác cao và (2) mũi không có cạnh sắc bén nào khác ngoài lỗ mũi do đó việc phát hiện cạnh cho thêm thông tin giới hạn. Kết quả trích xuất mũi xem Hình 4b và Hình 4g.
@@ -122,8 +127,6 @@ Sử dụng các điểm gốc góc, trung tâm tròng mắt, và bán kính m�
 \label{refhinh4}
 \end{figure*}
 
-\subsection{Miệng}
-Một quy trình hai bước được thực hiện để trích xuất miệng của từng ảnh bố mẹ. Đầu tiên là phương pháp được diễn giải trong Phần II-B, dùng hai mặt nạ ellipse để trích xuất mặt nạ tổng quát cho miệng. Phần thứ hai của thuật toán để gồm việc phát hiện biên trên một ảnh tăng cường-môi (lip-enhanced). Phép chuyển đổi từ hệ màu RGB sang hệ màu tăng cường-môi được mô tả bởi công thức $14(2G-R-0.5B)$ iúp nâng cao mức thành công của bộ dò biên môi, vì nó phân biệt rõ màu da và môi, như Hình 7. Việc phát hiện cạnh sử dụng toán tử Laplacian của Gaussian đã được thực hiện trên ảnh tăng cường-môi như Hình 7.
 \begin{figure}[!h]
 \centering
 \subfigure[Lip-enhanced image]{\includegraphics{Images/63}}
@@ -134,10 +137,8 @@ Một quy trình hai bước được thực hiện để trích xuất miệng 
 \label{refhinh7}
 \end{figure}
 
-Kế đến, thực hiện tìm biên gần nhất với các điểm mốc của miệng, P4 và P5. Nếu biên gần nhất với P4 giao với biên gần nhất với P5, nó được xác định là biên môi. Nếu điều kiện này không thoả, mặt nạ biên bị loại bỏ và chỉ có hai mặt nạ ellipse được sử dụng.
-
-Để tạo ra mặt nạ biên cho miệng, biên của môi được làm đầy và sau đó mở rộng một chút để đảm bảo môi không bị cắt. Hai mặt nạ ellipse được phủ lên mặt nạ biên miệng để tạo ra mặt nạ miệng cuối cùng. Kết quả của việc trích xuất miệng xem trong Hình 4e và Hình 4j.
-
+\subsection{Miệng}
+Một quy trình hai bước được thực hiện để trích xuất miệng của từng ảnh bố mẹ. Đầu tiên là phương pháp được diễn giải trong Phần II-B, dùng hai mặt nạ ellipse để trích xuất mặt nạ tổng quát cho miệng. Phần thứ hai của thuật toán để gồm việc phát hiện biên trên một ảnh tăng cường-môi (lip-enhanced). Phép chuyển đổi từ hệ màu RGB sang hệ màu tăng cường-môi được mô tả bởi công thức $14(2G-R-0.5B)$ iúp nâng cao mức thành công của bộ dò biên môi, vì nó phân biệt rõ màu da và môi, như Hình 7. Việc phát hiện cạnh sử dụng toán tử Laplacian của Gaussian đã được thực hiện trên ảnh tăng cường-môi như Hình 7.
 
 \begin{figure}[!t]
 \centering
@@ -147,6 +148,10 @@ Hillary Rhoda]{\includegraphics{Images/12}}
 \caption{Trích xuất vùng da}
 \label{refhinh8}
 \end{figure}
+
+Kế đến, thực hiện tìm biên gần nhất với các điểm mốc của miệng, P4 và P5. Nếu biên gần nhất với P4 giao với biên gần nhất với P5, nó được xác định là biên môi. Nếu điều kiện này không thoả, mặt nạ biên bị loại bỏ và chỉ có hai mặt nạ ellipse được sử dụng.
+
+Để tạo ra mặt nạ biên cho miệng, biên của môi được làm đầy và sau đó mở rộng một chút để đảm bảo môi không bị cắt. Hai mặt nạ ellipse được phủ lên mặt nạ biên miệng để tạo ra mặt nạ miệng cuối cùng. Kết quả của việc trích xuất miệng xem trong Hình 4e và Hình 4j.
 
 \subsection{Da}
 Màu da là đặc trưng cuối cùng được trích xuất từ ảnh bố mẹ và dựa trên việc phân đoạn màu da thành 6 khúc trên hệ màu HSV \cite{ref:r9}. Sử dụng việc phân đoạn trong hệ màu HSV này, vùng da trên khuôn mặt được xác định và được dùng để tính các giá trị HSV trung bình cho màu da của bố mẹ. Kết quả tạo mặt nạ da có thể xem trong Hình 8.
@@ -164,6 +169,17 @@ Bộ cơ sở dữ liệu bao gồm ảnh của chín em bé với màu da và m
 \end{figure}
 
 Để chọn được tấm ảnh gốc em bé phù hợp với hình ảnh cha mẹ, yếu tố căn bản cần xem xét là màu da. Việc so sánh được thực hiện bằng cách tổ hợp tuyến tính các giá trị HSV (hue, saturation, value) của màu da bố và mẹ để tạo ra màu da tổng hợp, rồi chọn ra ảnh gốc em bé có màu da trong hệ màu HSV gần nhất với màu da tổng hợp này. Ngoài ra nếu cả bố và mẹ đều có mắt xanh lá hoặc xanh dương, ảnh em bé với màu mắt đó sẽ được chọn.
+
+\begin{figure}[!t]
+\centering
+\subfigure[A]{\includegraphics[scale=0.97]{Images/16}}
+\subfigure[B]{\includegraphics{Images/22}}
+\subfigure[A']{\includegraphics{Images/31}}
+\subfigure[B]{\includegraphics{Images/43}}
+\subfigure[Cross-dissolving của A' và B', I]{\includegraphics{Images/50}}
+\label{refhinh10}
+\caption{Morphing of two parent features, A and B}
+\end{figure}
 
 \section{MORPHING CÁC ĐẶC TÍNH}
 Các đặc trưng khuôn mặt (mắt, mũi và miệng) được kết hợp từ bố, mẹ, và ảnh gốc em bé bằng một thuật toán morphing dựa trên thuật toán mesh warping \cite{ref:r10}, \cite{ref:r11}. Thuật toán này trải qua 4 giai đoạn: phân vùng ảnh, warping, cross dissolving, và tạo dựng hình ảnh em bé.
@@ -192,16 +208,6 @@ Công thức homography
     \end{bmatrix}
 \end{align*}
 
-\begin{figure}[!t]
-\centering
-\subfigure[A]{\includegraphics[scale=0.97]{Images/16}}
-\subfigure[B]{\includegraphics{Images/22}}
-\subfigure[A']{\includegraphics{Images/31}}
-\subfigure[B]{\includegraphics{Images/43}}
-\subfigure[Cross-dissolving của A' và B', I]{\includegraphics{Images/50}}
-\label{refhinh10}
-\caption{Morphing of two parent features, A and B}
-\end{figure}
 Quá trình trên ánh xạ toạ độ của các điểm ảnh trên ảnh đích đến các điểm ảnh trên ảnh gốc, rồi gán màu sắc nội suy của ảnh gốc cho ảnh đích, với \[\textbf{\underline{x}} = T^{-1}\textbf{\underline{x}'}\]
 Điều này đảm bảo tất cả điểm ảnh trên ảnh đích đều được gán giá trị.
 
@@ -210,8 +216,6 @@ Sau khi hai ảnh đặc trưng được warping vào các vị trí trung gian 
 \[I[x,y]=\alpha A'[x,y]+(1-\alpha) B'[x,y]\]
 Với $0 < \alpha < 1$. Kết quả cross-dissolve từ hình của hai bố mẹ ở Hình 10c và Hình 10d được thể hiện ở Hình 10e.
 
-\subsection{Tạo dựng hình ảnh em bé}
-Các đặc trưng hỗn hợp của người lớn sẽ được morphing với các đặc trưng tương ứng trên ảnh gốc em bé sử dụng các bước morphing (phân vùng ảnh, warping, và cross-dissolving) như đã được miêu tả ở trên. Điều này là cần thiết để đảm bảo các đặc trưng sau cùng trông giống với một em bé, vì một số đặc trưng nhất định vốn rất khác nhau giữa trẻ em và người lớn. Ví dụ, trẻ em có tròng mắt lớn hơn và sống mũi phẳng hơn. Kết quả của phép warping cuối cùng này được thể hiện trong Hình 11.
 \begin{figure}[!t]
 \centering
 \subfigure[Đặc tính hỗn hợp của khuôn mặt người lớn, I]{\includegraphics{Images/43}}
@@ -222,12 +226,6 @@ Các đặc trưng hỗn hợp của người lớn sẽ được morphing với
 \label{refhinh11}
 \caption{Morphing giữa đặc tính hỗn hợp của khuôn mặt người lớn và đặc tính cơ bản khuôn mặt em bé, A và B}
 \end{figure}
-Bước tiếp theo, các đặc trưng được tạo ra, F, sẽ được đặt chồng lên ảnh gốc em bé sao cho điểm trung tâm của các đặc trưng trùng nhau. Các điểm biên của vùng đặc trưng sẽ được làm mượt để làm cho các đặc trưng được tạo ra hòa lẫn vào vùng biên trên ảnh gốc em bé. Một mặt nạ nhị phân xung quanh F, BW, sẽ được tạo, sử dụng open filter và erode để làm cho mặt nạ nhị phân mượt hơn và nhỏ hơn. Một bộ lọc Gauss được áp dụng lên mặt nạ nhị phân để tạo ra mặt nạ trọng số $\sigma$. Dựa trên các đặc trưng khuôn mặt, ta có thể áp dụng bộ lọc trung bình hoặc bộ lọc Gauss lên nghịch đảo của BW nhằm tạo ra mặt nạ trọng số $\beta$. Hình 12 minh họa mặt nạ trọng số được sử dụng trong quá trình làm mượt ảnh.  
-
-Các đặc tính đặc lên ảnh gốc em bé được tính toán theo công thức \[Feature = \beta I_{baby}+(1 - \beta )(\sigma F+(1-\sigma )C')\]
-Trong đó $I_{baby}$ là ảnh em bé gốc.
-
-Việc làm mượt với ảnh warping em bé là cần thiết vì đôi khi các đặc trưng gốc trên ảnh gốc em bé là rất khác so với các đặc trưng được tạo ra từ ảnh bố mẹ, khiến việc biến đổi trên đường viên gặp khó khăn. Ví dụ, ảnh gốc em bé có mũi rộng hơn nhiều so với mũi được tạo ra, khiến cho phần rìa của mũi em bé trên ảnh gốc vẫn xuất hiện trên ảnh đích nếu như sử dụng phương pháp gradual transition. Để giải quyết vấn đề này, ta sẽ trích xuất đặc trưng nhiều hơn trên vùng xung quanh của ảnh.
 
 \begin{figure}[!t]
 \centering
@@ -264,9 +262,17 @@ Việc làm mượt với ảnh warping em bé là cần thiết vì đôi khi c
 \caption{Ví dụ kết quả của tạo dựng khuôn mặt em bé. Cột bên phải là hình ảnh được tạo dựng từ hình ảnh cha mẹ ở cột trái và giữa}
 \end{figure}
 
-\newpage
-~
-\newpage
+\subsection{Tạo dựng hình ảnh em bé}
+Các đặc trưng hỗn hợp của người lớn sẽ được morphing với các đặc trưng tương ứng trên ảnh gốc em bé sử dụng các bước morphing (phân vùng ảnh, warping, và cross-dissolving) như đã được miêu tả ở trên. Điều này là cần thiết để đảm bảo các đặc trưng sau cùng trông giống với một em bé, vì một số đặc trưng nhất định vốn rất khác nhau giữa trẻ em và người lớn. Ví dụ, trẻ em có tròng mắt lớn hơn và sống mũi phẳng hơn. Kết quả của phép warping cuối cùng này được thể hiện trong Hình 11.
+
+Bước tiếp theo, các đặc trưng được tạo ra, F, sẽ được đặt chồng lên ảnh gốc em bé sao cho điểm trung tâm của các đặc trưng trùng nhau. Các điểm biên của vùng đặc trưng sẽ được làm mượt để làm cho các đặc trưng được tạo ra hòa lẫn vào vùng biên trên ảnh gốc em bé. Một mặt nạ nhị phân xung quanh F, BW, sẽ được tạo, sử dụng open filter và erode để làm cho mặt nạ nhị phân mượt hơn và nhỏ hơn. Một bộ lọc Gauss được áp dụng lên mặt nạ nhị phân để tạo ra mặt nạ trọng số $\sigma$. Dựa trên các đặc trưng khuôn mặt, ta có thể áp dụng bộ lọc trung bình hoặc bộ lọc Gauss lên nghịch đảo của BW nhằm tạo ra mặt nạ trọng số $\beta$. Hình 12 minh họa mặt nạ trọng số được sử dụng trong quá trình làm mượt ảnh.  
+
+Các đặc tính đặc lên ảnh gốc em bé được tính toán theo công thức \[Feature = \beta I_{baby}+(1 - \beta )(\sigma F+(1-\sigma )C')\]
+Trong đó $I_{baby}$ là ảnh em bé gốc.
+
+Việc làm mượt với ảnh warping em bé là cần thiết vì đôi khi các đặc trưng gốc trên ảnh gốc em bé là rất khác so với các đặc trưng được tạo ra từ ảnh bố mẹ, khiến việc biến đổi trên đường viên gặp khó khăn. Ví dụ, ảnh gốc em bé có mũi rộng hơn nhiều so với mũi được tạo ra, khiến cho phần rìa của mũi em bé trên ảnh gốc vẫn xuất hiện trên ảnh đích nếu như sử dụng phương pháp gradual transition. Để giải quyết vấn đề này, ta sẽ trích xuất đặc trưng nhiều hơn trên vùng xung quanh của ảnh.
+
+
 \section{KẾT QUẢ}
 Chương trình Tạo dựng Khuôn mặt Em bé được thử nghiệm trên 30 ảnh người lớn khác nhau. Kết quả phép thử được thể hiện trong Hình 13. Từ bài kiểm tra chất lương, các khuôn mặt em bé được tạo ra có các đặc trưng tương đối giống với cặp bố mẹ, đặc biệt là hình dáng mũi, miệng, màu mắt và màu da.
 
@@ -277,40 +283,75 @@ Tuy nhiên, nếu một trong hai ảnh bố hoặc mẹ được đưa vào ngh
 Một chương trình tạo dựng khuôn mặt em bé tự động đã được phát triển. Phương pháp trích xuất đặc trưng khuôn mặt và thuật toán morphing tương tối thỏa mãn việc tạo ra khuôn mặt một em bé từ ảnh bố mẹ. Ứng dụng có thể pháp triển thêm bằng cách mở rộng bộ cơ sở dữ liệu ảnh em bé, phát triển việc nhận dạng cha mẹ để đưa ra sự lựa chọn ảnh gốc tốt hơn. Ngoài ra, có thể áp dụng một thuật toán thay đổi tuổi tác để tạo ra ảnh khi bé của bố và mẹ trước khi kết hợp chúng với nhau. Điều này có thể hạn chế các khiếm khuyết bới sự khác biệt giữa các đặc trưng phụ thuộc vào tuổi tác.
 
 \section*{Lời cảm ơn}
-Các tác giả muốn gửi lời cảm ơn tới thạc sĩ Đặng Nguyên Châu, giảng viên môn Xử lý ảnh vì đã cung cấp những kiến thức chuyên môn và các kỹ năng cần thiết để hoàn thành dự án này.
+Các tác giả muốn gửi lời cảm ơn tới giáo sư Bernd Girod, giáo sư Gordon Wetzstein, Huizhong Chen, và Jean-Baptiste Boin vì đã giảng dạy môn Xử lý ảnh số và các kỹ năng cần thiết để hoàn thành dự án này. Các tác giả cũng đặc biệt cảm ơn sự hướng dẫn và hỗ trợ của Huizhong Chen, giảng viên hướng dẫn dự án.
 
 \bibliographystyle{IEEEtran}
 \bibliography{ref}
 
 \newpage
+~\\
+\newpage
 \appendices
 \section{CÁC PHƯƠNG TRÌNH ĐIỂM MẤU CHỐT KHUÔN MẶT}
+\setlength{\parskip}{1pt}
 Khi mà điểm góc trên bên trái của khuôn mặt có tọa độ $(X_{B1},Y_{B1})$, điểm góc dưới bên trái có tọa độ $(X_{B1},Y_{B2})$, điểm góc trên bên phải có tọa độ $(X_{B2},Y_{B1})$, và các điểm mốc trên được nhận diện trên khuôn mặt có tọa độ $(X_{P2},Y_{P2})$, $(X_{P3},Y_{P3})$,...,$(X_{P8},Y_{P8})$, thì các điểm mấu chốt xung quanh mũi như đã thấy ở Hình 3 sẽ được tính như sau:
-\[X_{1}=\dfrac{1}{2}(X_{P2}+X_{P3}) \qquad Y_{1}=\dfrac{1}{2}(Y_{P2}+Y_{P3})\]
-\[X_{2}=\dfrac{1}{2}(X_{P4}+X_{P5}) \qquad Y_{2}=\dfrac{1}{2}(Y_{P4}+Y_{P5})\]
-\[X_{3}=\dfrac{1}{3}(2X_{P8}+X_{2}) \qquad Y_{3}=\dfrac{1}{3}(2Y_{P8}+Y_{2})\]
-\[X_4 = X_3-X_2+X_{P4} \qquad Y_4 = Y_3-Y_2+Y_{P4}\]
-\[X_5 = X_3-X_2+X_{P5} \qquad Y_5 = Y_5-Y_5+Y_{P5}\]
-\[X_{6}=\dfrac{1}{2}(X_{P2}+X_{1}) \qquad Y_{6}=\dfrac{1}{2}(Y_{P2}+Y_{1})\]
-\[X_{7}=\dfrac{1}{2}(X_{P3}+X_{1}) \qquad Y_{7}=\dfrac{1}{2}(Y_{P3}+Y_{1})\]
-\\
+\begin{multicols}{2}
+~\\
+$X_{1}=\dfrac{1}{2}(X_{P2}+X_{P3})$\\\\
+$X_{1}=\dfrac{1}{2}(X_{P2}+X_{P3})$\\\\
+$X_{3}=\dfrac{1}{3}(2X_{P8}+X_{2})$\\\\
+$X_4 = X_3-X_2+X_{P4}$\\\\
+$X_5 = X_3-X_2+X_{P5}$\\\\
+$X_{6}=\dfrac{1}{2}(X_{P2}+X_{1})$\\\\
+$X_{7}=\dfrac{1}{2}(X_{P3}+X_{1})$
+\columnbreak
+~\\\\
+$Y_{1}=\dfrac{1}{2}(Y_{P2}+Y_{P3})$\\\\
+$Y_{2}=\dfrac{1}{2}(Y_{P4}+Y_{P5})$\\\\
+$Y_{3}=\dfrac{1}{3}(2Y_{P8}+Y_{2})$\\\\
+$Y_4 = Y_3-Y_2+Y_{P4}$\\\\
+$Y_5 = Y_5-Y_5+Y_{P5}$\\\\
+$Y_{6}=\dfrac{1}{2}(Y_{P2}+Y_{1})$\\\\
+$Y_{7}=\dfrac{1}{2}(Y_{P3}+Y_{1})$
+\end{multicols}
 Các điểm mấu chốt xung quanh miệng như ở Hình 3 $(X_8,Y_8),(X_9,Y_9),...,(X_{16},Y_{16})$ được tính theo công thức:
-\[X_8=\dfrac{1}{3}(X_{P8}+2X_2) \qquad Y_8=\dfrac{1}{3}(Y_{P8}+2Y_2)\]
-\[X_9=X_8-X_2+X_{P4} \qquad Y_9 = Y_8-Y_2+Y_{P4}\]
-\[X_{10}=X_8-X_2+_{P5} \qquad Y_{10}=Y_8-Y_2+Y_{P5}\]
-\[X_{11}=X_9 \qquad Y_{11} = \frac{1}{2}(Y_9+Y_{B2})\]
-\[X_{12}=X_{10} \qquad Y_{12} = \frac{1}{2}(Y_{10}+Y_{B2})\]
-\[X_{13}=X_{P4}-0.3(X_2-X_{P4}) \qquad Y_{13} = Y_{P4}\]
-\[X_{14}=X_{P5}-0.3(X_{P5}-X_2) \qquad Y_{14} = Y_{P5}\]
-\[X_{15}=X_{2} \qquad Y_{15} = \frac{1}{4}(Y_{2}+3Y_{B2})\]
-\[X_{16}=X_{2} \qquad Y_{16} = \frac{1}{2}(Y_{2}+Y_{B2})\]
+\begin{multicols}{2}
+~\\
+$X_8=\dfrac{1}{3}(X_{P8}+2X_2)$\\\\
+$X_9=X_8-X_2+X_{P4}$\\\\
+$X_{10}=X_8-X_2+X_{P5}$\\\\
+$X_{11}=X_9$\\\\
+$X_{12}=X_{10}$\\\\
+$X_{13}=X_{P4}-0.3(X_2-X_{P4})$\\\\
+$X_{14}=X_{P5}-0.3(X_{P5}-X_2)$\\\\
+$X_{15}=X_{2}$\\\\
+$X_{16}=X_{2}$
+\columnbreak
+~\\\\
+$Y_8=\dfrac{1}{3}(Y_{P8}+2Y_2)$\\\\
+$Y_9 = Y_8-Y_2+Y_{P4}$\\\\
+$Y_{10}=Y_8-Y_2+Y_{P5}$\\\\
+$Y_{11} = \frac{1}{2}(Y_9+Y_{B2})$\\\\
+$Y_{12} = \frac{1}{2}(Y_{10}+Y_{B2})$\\\\
+$Y_{13} = Y_{P4}$\\\\
+$Y_{14} = Y_{P5}$\\\\
+$Y_{15} = \dfrac{1}{4}(Y_{2}+3Y_{B2})$\\\\
+$Y_{16} = \dfrac{1}{2}(Y_{2}+Y_{B2})$
+\end{multicols}
 Các điểm mấu chốt trên mắt như ở Hình 3, $(X_{17},Y_{17}),(X_{18},Y_{18})$ được tính theo công thức:
-\[X_{17}=\dfrac{1}{2}(X_{P2}+X_{P6}) \qquad Y_{17}=\dfrac{1}{2}(Y_{P2}+Y_{P6})\]
-\[X_{18}=\dfrac{1}{2}(X_{P3}+X_{P7}) \qquad Y_{18}=\dfrac{1}{2}(Y_{P3}+Y_{P7})\]
+\begin{multicols}{2}
+~\\
+$X_{17}=\dfrac{1}{2}(X_{P2}+X_{P6})$\\\\
+$X_{18}=\dfrac{1}{2}(X_{P3}+X_{P7})$
+\columnbreak
+~\\\\
+$Y_{17}=\dfrac{1}{2}(Y_{P2}+Y_{P6})$\\\\
+$Y_{18}=\dfrac{1}{2}(Y_{P3}+Y_{P7})$
+\end{multicols}
 \section{PHÂN CÔNG}
 \begin{enumerate}
-	\item Hoàng Gia Nguyên:
-	\item Phùng Đức Nghĩa:
-	\item Trần Hoàng Khôi Nguyên:
+	\item Hoàng Gia Nguyên: Dịch và soạn thảo báo cáo.
+	\item Phùng Đức Nghĩa: Soạn thảo báo cáo và poster.
+	\item Trần Hoàng Khôi Nguyên: Chuẩn bị code Matlab và dịch báo cáo.
 \end{enumerate}
 \end{document}
